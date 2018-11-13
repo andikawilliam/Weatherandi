@@ -10,7 +10,7 @@ Finally, properties of Bootstrap 4 is used.
 
 - A supported browser 
 - Internet Connection.
-- Google Places API and DarkSky API
+- Google Places API key and DarkSky API key
 **(IMPORTANT: not provided here)**
 
 ### Workflow
