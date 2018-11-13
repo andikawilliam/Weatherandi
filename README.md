@@ -3,8 +3,8 @@ Weather checking web-app by using DarkSky and Google Places API
 
 ## Description
 This is a web based application that gives weather status for the given city.
-It is made of simple html, javascript, and jQuery. The weather data is retrieved from the DarkSky API. The Google API serves to provide latitude and longitude of a location, which is required by the DarkSky API.
-Finally properties of Bootstrap 4 is used.
+It is made of simple **html, javascript, and jQuery**. The weather data is retrieved from the DarkSky API. The Google API serves to provide latitude and longitude of a location, which is required by the DarkSky API.
+Finally, properties of Bootstrap 4 is used.
 
 ### Prerequisites
 
