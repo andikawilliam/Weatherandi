@@ -126,5 +126,6 @@ For the code to function properly you would need to update the DarkSky API and G
 
 ## Acknowledgments
 
-* https://github.com/tutsplus/building-a-weather-app-with-the-darksky-api/tree/master/js
+* The Google Autocomplete is referenced from
+https://github.com/tutsplus/building-a-weather-app-with-the-darksky-api/tree/master/js
 * https://tiagovalverde.com/get-current-weather-using-dark-sky-api/
