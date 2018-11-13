@@ -10,7 +10,8 @@ Finally properties of Bootstrap 4 is used.
 
 - A supported browser 
 - Internet Connection.
-- Google Places API and DarkSky API (not provided here)
+- Google Places API and DarkSky API
+**(IMPORTANT: not provided here)**
 
 ### Workflow
 
@@ -104,6 +105,7 @@ $.getJSON([api_call], function(forecast) {
 
 ## Deployment
 
+**IMPORTANT: KEYS ARE NOT PROVIDED**
 For the code to function properly you would need to update the DarkSky API and Google API respectively:
 - Darksky API: line 7
 - Google API : line 75
