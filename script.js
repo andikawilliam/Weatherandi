@@ -4,7 +4,7 @@
 
 function weatherReport(latitude, longitude) {
 
-	var apiKey       = 'c3d437613ced43946d3c8f8a9da23bfc',		//our api
+	var apiKey       = '',		//our api
 		url          = 'https://api.darksky.net/forecast/',		//the beginning for every api
 		lati         = latitude,								//latitude of the city
 		longi        = longitude,								//longitude of the city
@@ -82,7 +82,7 @@ function getWeather() {
 
 function insertGoogleScript() {
 	var google_api = document.createElement('script'),
-			api_key    = 'AIzaSyBGtUqgx6FFbgLwtxV4dpWjgS3NMXHRhno';
+			api_key    = '';
 
 	// Inject the script for Google's API and reference the initGoogleAPI
 	// function as a callback.
