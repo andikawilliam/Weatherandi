@@ -74,7 +74,7 @@ exclude		 = "?exclude=minutely,hourly,daily,alerts,flags",		//we only want the e
 ```
 
 #### Processing the Weather Data JSON object
-After getting the JSON object data, we want to use some of the data to display them on the html
+After getting the JSON object data, we want to use some of the data to display them on the html.
 For simplicity we only use summary, temperature and humidity here.
 ```
 $.getJSON([api_call], function(forecast) {
