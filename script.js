@@ -4,12 +4,12 @@
 
 function weatherReport(latitude, longitude) {
 
-	var apiKey       = '',		//INSERT YOUR DARKSKY API
+	var apiKey       = 'c3d437613ced43946d3c8f8a9da23bfc',		//our api
 		url          = 'https://api.darksky.net/forecast/',		//the beginning for every api
 		lati         = latitude,								//latitude of the city
 		longi        = longitude,								//longitude of the city
 
-		exclude		 = "?exclude=minutely,hourly,daily,alerts,flags",		//we only want the essentials
+		exclude		 = "?exclude=minutely,hourly,alerts,flags",		//we only want the essentials
 		api_call     = "https://cors-anywhere.herokuapp.com/" + url + apiKey + "/" + lati + "," + longi + exclude;	
 
 	// Print Link for testing
@@ -20,6 +20,10 @@ function weatherReport(latitude, longitude) {
  		
 
 
+    // =======================================================
+    // FOR CURRENT WEATHER 
+    // =======================================================
+    
     	summary = forecast.currently["summary"];
     	
     	temperaturef = forecast.currently["temperature"];
@@ -27,16 +31,22 @@ function weatherReport(latitude, longitude) {
     	final_temp = parseFloat(temperaturec).toFixed(2)
     	
     	humidity = forecast.currently["humidity"];
+    	futForecast = forecast.daily["summary"];
 
-    	// $.each(report.currently , function(v) {
-     //        alert(v.summary);
-     //        return;
-    	// });
-
-    	$('#weather').text("The Weather today in " + $("#city").val()  + " is: ");
+    //printing result in the html
+    	$('#weather').text("Current Weather in " + $("#city").val()  + " is: ");
     	$('#summary').text("Summary : " + summary);
     	$('#temperature').text("Temperature : " + final_temp + " Celcius");
     	$('#humidity').text("Humidity : " + humidity);
+
+    // =======================================================
+    // FOR DAILY WEATHER FORCAST
+    // =======================================================
+
+    	
+
+    	$('#forecast').text("Forecast : " + futForecast);
+
 	});
 
 }
@@ -72,7 +82,7 @@ function getWeather() {
 
 function insertGoogleScript() {
 	var google_api = document.createElement('script'),
-			api_key    = ''; //INSERT YOUR GOOGLE API
+			api_key    = 'AIzaSyBGtUqgx6FFbgLwtxV4dpWjgS3NMXHRhno';
 
 	// Inject the script for Google's API and reference the initGoogleAPI
 	// function as a callback.
