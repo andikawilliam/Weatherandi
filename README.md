@@ -110,6 +110,15 @@ For the code to function properly you would need to update the DarkSky API and G
 
 ## Results
 
+![Insert](https://github.com/andkwv/Weatherandi/blob/master/results/1.png)
+
+***
+
+![Check](https://github.com/andkwv/Weatherandi/blob/master/results/2.png)
+
+***
+
+![Result](https://github.com/andkwv/Weatherandi/blob/master/results/3.png)
 
 
 
